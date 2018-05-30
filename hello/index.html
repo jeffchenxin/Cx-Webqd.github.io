@@ -1,60 +1,31 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<style type="text/css">
-			*{
-				margin: 0px;
-				padding: 0px;
-			}
-       .i{
-       	width: 100%;
-       	height:769px;
-       	background-image: linear-gradient(0deg,yellow,orange);
-       	margin-top:0px;
-       	padding: 0px;
-       	border: 0px solid #000000;
-       	padding: 1px;
-       }
-       
-       .b{
-       	width: 300px;
-       	height: 300px;
-       border: 20px solid black;
-       	border-radius: 30px 30px 30px 30px;
-       	background-image:linear-gradient(0deg,#ccc,blue) ;
-       	margin: auto;
-       	margin-top: 25px;
-       }
-       .f{
-       	width: 200px;
-       	height: 200px;
-       	border-radius:50% ;
-       	border:0px solid white;
-       	padding: 1px;
-       	background-color:green ;
-       	margin: auto;
-       	margin-top: 40px;
-       }
-       .t{
-       	width: 0px;
-       	height: 0px;
-		border: 50px solid transparent;
-		border-left:50px solid black;
-		margin:50px 85px 50px 85px;
-       }
-		</style>
+		<link rel="stylesheet" href="css/new_file.css" />
 	</head>
 	<body>
-		<div class="i">
-		<div class="d">
-		<div class="b">
-			<div class="f">
-				<div class="t">
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
+		<form action="http://127.0.0.1:80/server.php" method="=post"></form>
+		账号：
+		<input type="text" name="username" />
+		密码：
+		<input type="password" name="password" />
+	</form>-->
+	<form id="formBox" method="post" autocomplete="on">
+		<span class="username">用户名：<input type="text" id="user" /><br /><br /></span>
+		<span class="psword">昵&nbsp;&nbsp;&nbsp;称：<input type="text" id="psw" /><br /><br /><span>
+		性别  
+		<input type="radio" name="sex" checked="checked"/>男
+		<input type="radio" name="sex" />女<br /><br />
+		兴趣
+		<input type="checkbox" />吃鸡
+		<input type="checkbox" />LOL
+		<input type="checkbox" />王者<br /><br />
+		<input type="reset" />
+		<input type="submit" value="提交"/>
+		<input type="submit" value="取消"/>
+		<input type="image" src="img/1.png" />
+	</form>
 	</body>
 </html>
